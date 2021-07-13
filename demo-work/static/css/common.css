@@ -1,0 +1,242 @@
+/*查询条件*/
+.query-box{
+  padding: 10px 20px;
+}
+.query-title{
+  position: relative;
+  padding-bottom: 10px;
+}
+.query-title:after {
+  content: '';
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  bottom: 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.query-title:before{
+  content: '';
+  position: absolute;
+  left: -20px;
+  width: 3px;
+  height: 15px;
+  background: #409EFF;
+  top: 3px;
+}
+.query-form .grid-three .ivu-form-item{
+  width: calc(33% - 10px) !important;
+}
+/*查询条件 End*/
+
+
+/*umy-ui 表格中的式更改*/
+.el-tooltip__popper{
+  box-shadow: 0 0 2px 2px #f1f1f1;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  max-width:300px;
+}
+.table-box-umy .plTableBox .el-table thead{
+  color: #515a6e ;
+}
+.table-box-umy .plTableBox .el-table .cell.el-tooltip{
+  width: 100% !important;
+}
+/*umy-ui 表格中的 样式更改 End*/
+
+
+/*表单样式更改 */
+
+.ivu-form .ivu-form-item-label, .ivu-input,.ivu-input-number-input{
+  font-size: 12px;
+}
+.ivu-select-single .ivu-select-selection .ivu-select-placeholder, .ivu-select-single .ivu-select-selection .ivu-select-selected-value{
+  font-size: 12px;
+}
+.ivu-form-item-error-tip{
+  font-size: 12px;
+}
+.input-number-box .ivu-input-number{
+  border-radius: 4px 0 0 4px;
+}
+.input-number-append{
+  width: 35px;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #f8f8f9;
+  border: 1px solid #dcdee2;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+.ivu-radio-wrapper{
+  font-size: 12px;
+}
+/*表单样式更改 Ended*/
+
+
+/*弹框表单样式*/
+.dialog-form.grid-two .ivu-form-item{
+  width: calc(50% - 10px);
+  margin-bottom: 5px;
+}
+.dialog-form.grid-two .ivu-form-item.ivu-form-item-required.ivu-form-item-error{
+  margin-bottom: 15px;
+}
+.dialog-form .ivu-form-item-error-tip{
+  padding-top: 2px;
+}
+
+/*弹框表单样式 Ended*/
+
+
+/*抽屉样式 */
+.drawer-style .ivu-drawer-header{
+  border-bottom: none;
+  padding: 14px 16px 0 16px;
+}
+/*抽屉样式 End*/
+
+
+/*三角形*/
+
+/*向上*/
+.triangle-border-up{
+  display:inline-block;
+  width:0;
+  height:0;
+  border-width:0 10px 18px;
+  border-style:solid;
+  border-color:transparent transparent #e2e2e2;/*透明 透明  灰*/
+  position:relative;
+}
+.triangle-border-up:after{
+  content: '';
+  position:absolute;
+  top:1px;
+  left:-8px;
+  display:inline-block;
+  width:0;
+  height:0;
+  border-width:0 8px 16px;
+  border-style:solid;
+}
+.triangle-border-up.yellow:after{
+  border-color:transparent transparent #fc0;/*透明 透明  黄*/
+}
+.triangle-border-up.blue:after{
+  border-color:transparent transparent #409EFF;/*透明 透明 蓝 */
+}
+/*向下*/
+.triangle-border-down{
+  display:inline-block;
+  width:0;
+  height:0;
+  border-width:18px 10px 0;
+  border-style:solid;
+  border-color:#e2e2e2 transparent transparent;/*灰 透明 透明 */
+  position:relative;
+}
+.triangle-border-down:after{
+  content: '';
+  position:absolute;
+  top:-17px;
+  left:-8px;
+  display:inline-block;
+  width:0;
+  height:0;
+  border-width:16px 8px 0;
+  border-style:solid;
+}
+.triangle-border-down.yellow:after{
+  border-color:#fc0 transparent transparent;/*黄 透明 透明 */
+}
+.triangle-border-down.blue:after{
+  border-color:#409EFF transparent transparent;/*蓝 透明 透明 */
+}
+
+/*向左*/
+.triangle-left{
+  width:0;
+  height:0;
+  display:inline-block;
+  border-style:solid;
+  border-width:8px 14px 8px 0;
+  position:relative;
+}
+.triangle-left.gray{
+  border-color:transparent #e2e2e2 transparent transparent;/*透明 灰 透明 透明 */
+}
+
+/*向右*/
+.triangle-right{
+  width:0;
+  height:0;
+  display:inline-block;
+  border-style:solid;
+  border-width: 8px 0 8px 14px;
+  position:relative;
+}
+.triangle-right.gray{
+  border-color:transparent transparent transparent #e2e2e2;/*透明 透明 透明 灰*/
+}
+
+/*三角形 End*/
+
+/*正方形*/
+.square-box{
+  display: inline-block;
+  width: 26px;
+  height: 60px;
+  position: relative;
+}
+.square-box:after{
+  content: '';
+  position: absolute;
+  left: 13px;
+  bottom: 20px;
+  height: 40px;
+  border-left: 1px dashed #303031;
+}
+.square{
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 26px;
+  height: 20px;
+}
+
+.square.blue{
+  background-color: #409EFF;
+}
+.square.gray{
+  background-color: #e2e2e2;
+}
+.square.yellow{
+  background-color: #fc0;
+}
+.square.red{
+  background-color: #FF0000;
+}
+/*正方形 End*/
+
+.today-icon{
+  position: relative;
+  display: inline-block;
+  width: 26px;
+  height: 80px;
+}
+.today-icon:after{
+  content: '';
+  position: absolute;
+  left: 13px;
+  bottom: 30px;
+  height: 50px;
+  border-left: 1px dashed #303031;
+}
+.today-icon i{
+  font-size: 24px;
+  color: #FF0000;
+  position: absolute;
+  bottom: 0;
+}
